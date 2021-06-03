@@ -1,0 +1,307 @@
+/* FINAL PROJECT a4loop */
+
+/* ------ Global Styles ----- */
+* {
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    background-color: #eee;
+    margin:0;
+    padding:0;
+    font: 10px;
+}
+
+/* Page Layout */
+main.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow:auto;
+    background-image: url(../images/background_main.png);
+}
+
+main.wrapper-landing {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow:auto;
+    background-color: black;
+    }
+
+/* Header */
+header{
+    background-color: rgba(51,51,51,1);
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    margin-top: 2rem;
+    margin-bottom:0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    color: #9f9c9c;
+}
+
+.header-logo {
+    padding-top: .15rem;
+    padding-left: 1.5rem;
+
+}
+.header-logo > p {
+    margin: 0;
+    padding-top:.25rem;
+    font-size: .75rem;
+    text-align: center;
+    color: rgba(125,9,166,1);
+    /*color: rgb(5,67,10);*/
+}
+
+header>h1 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1.5rem;
+}
+
+.logo {
+    display:block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----- LANDING PAGE ----- */
+
+.content-landing {
+    position: relative;
+    width: 55%;
+    float: right;
+}
+
+#landing-image {
+    boarder: 2px solid pink;
+    height: 100%;
+    width: auto;
+    z-index: 1;
+    position: relative;
+}
+
+.landing-text {
+    position: relative;
+    z-index: 5;
+    width: 25%;
+    margin: 75px 0 50px 75px;
+    padding: 25px;
+    color: rgba(125,9,166,1);
+    float: left;
+}
+
+
+/* ----- ASIDE ----- */
+aside {
+    
+    width: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 10px;
+    float: left;
+}
+
+.sidebar>a {
+    color: rgb(126,176,15);
+    text-decoration: none;
+}
+
+.sidebar>a:hover {
+    color: rgb(125,9,166);
+}
+
+
+/* ----- SECTION ----- */
+section {
+    background-color: rgba(214,214,214,.75);
+    width:80%;
+    margin-bottom: 1.5rem;
+    float: right;
+    
+}
+
+.content {
+    padding-bottom: 2rem; 
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+section>.container {
+    position: relative;
+}
+
+.page-id {
+    background-color: rgba(125,9,166,.25);
+    position: absolute;
+    top: 1rem;
+    padding-left: 3rem;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+img.img_id {
+    width: 100%;
+    height: auto;
+    opacity: 0.75;
+}
+
+p#contact-us {
+    font-size: 1.75rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(51,51,51,1);
+    margin: 0;
+    padding: 10px 25px;
+    clear: both;
+    color: #fff;
+}
+
+
+footer>.container {
+    display: block;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+    overflow:auto;
+}
+
+div.footer-lower {
+    border-top: 1px solid rgba(133,133,133,1);
+}
+
+.footer-logo {
+    width: 45%;
+    float: left;
+    padding-bottom: 5px;
+} 
+
+.social {
+    width:55%;
+    float: right;
+    margin: 0;
+}
+
+.social>.column {
+    float:right;
+    width: 32px;
+    line-height: 64px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.site-map {
+    background-color: rgba(51,51,51,1);
+    width: 80%;;
+    float: left;
+}
+
+th, td {
+    padding-right: 1rem;
+    text-align: left;
+}
+
+footer a {
+    color: rgb(126,176,15);
+    text-decoration: none
+}
+
+footer a:hover {
+    color: rgb(125,9,166);
+}
+
+.copyright {
+    width: 80%;
+    float: right;
+    text-align: right;
+}
+
+
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* START RESPONSIVE STYLES */
+/* Desktops and laptops ----------- */
+@media all and (min-width:1280px) {
+    aside {
+        width: 10%;
+        padding-bottom: 1rem;
+    }
+
+    section {
+        width: 85%;
+    }
+
+    img.img_id {
+    width: 100%;
+    height: auto;
+    opacity: 0.75;
+    }
+
+}
+
+
+/* Tablets  (portrait and landscape) ----------- */
+@media all and (min-device-width:768px) and (max-device-width:1279px) {
+ /*   aside {
+        width: 10%;
+        padding-bottom: 1rem;
+    }
+
+    section {
+        width: 80%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } */
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-device-width:767px) {
+    aside {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .col-r, .col-l, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

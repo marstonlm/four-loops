@@ -1,0 +1,133 @@
+/* section style */
+
+
+input[type=text], select, textarea, input[type=email], input[type=tel]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.message {
+  margin: 6px 6px 0 6px;
+  padding: 12px;
+  display: inline-block;
+  width: 75%;
+}
+
+.col-l {
+  width: 40%;
+  margin: 6px 6px 0 6px;
+  float: left;
+}
+
+.col-r {
+  width: 40%;
+  margin: 6px 6px 0 6px;
+  float: left;
+}
+
+
+.row:after {
+  content: "";
+  direction: table;
+  clear: both;
+}
+/*
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+
+
+
+/* START RESPONSIVE STYLES */
+/* Desktops and laptops ----------- */
+@media all and (min-width:1280px) {
+
+
+}
+
+
+/* Tablets  (portrait and landscape) ----------- */
+@media all and (min-device-width:768px) and (max-device-width:1279px) {
+
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-device-width:767px) {
+  .col-l, .col-r {
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+}
+
+
+ 
+/* start reCAPTCHA styles */
+form {
+  width: 90%;
+  margin-bottom: 5%;
+  padding: 1%;
+  border:5px solid rgba(59,31,43,.75);
+  background: rgba(59,31,43,.15);
+}
+
+form>div {
+  margin:1em;
+  padding: 1rem;
+}
+		
+/* writes to small text above reCAPTCHA upon failure */
+
+.dateFeedback{
+  font-style:italic;
+	font-size:70%;
+	font-weight:bold;
+	color:#f00;
+}
+
+input:required {
+ border: 1px solid red;
+}
+
+input:optional, textarea:optional {
+  background-color:#f1f1f1;
+  border:1px solid #ccc;
+}
+
+input[type="submit"], input[type="button"] {
+  background-color: #fff;
+  border-radius: 4px;
+  border: solid 1px #ccc;
+  padding: 0.3em 0.5em;
+}
+/*
+fieldset {
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  max-width: 350px;
+}
+
+legend {
+  margin-left: 0.5em;
+  padding: 0.2em 0.5em;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+} 
+        */
+/* end reCAPTCHA styles */
+
+
