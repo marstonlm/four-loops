@@ -1,4 +1,4 @@
-(function($){
+/*(function($){
 $(document).ready(function(){
 
 $('#cssmenu > ul').prepend('<li class=\"mobile\"><a href=\"#\"><span>Menu <i>&#9776;</i></span></a></li>');
@@ -27,3 +27,4 @@ $('#cssmenu > ul > li > a').click(function(e) {
 
 });
 })(jQuery);
+*/
