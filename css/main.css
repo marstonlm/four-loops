@@ -4,6 +4,7 @@
 * {
     margin:0;
     padding:0;
+    max-width: 100%;
 }
 
 html,body {
@@ -14,11 +15,10 @@ html,body {
 }
 
 /* Page Layout */
-main.wrapper {
+main {
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
-    overflow:auto;
 }
 
 /* Header */
@@ -27,8 +27,6 @@ header{
     width: 100%;
     padding-top: 1rem;
     padding-bottom: .5rem;
-    margin-top: 2rem;
-    margin-bottom:0;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
@@ -135,7 +133,11 @@ footer a:hover {
 
 /* ----- ASIDE ----- */
 #aside {
-  max-width: 15%;
+  width: 10%;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 100%;
+  top: 0;
 }
 
 
