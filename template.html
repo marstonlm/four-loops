@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/main.css" />
@@ -21,13 +20,27 @@
 
 <body>
   <header>
+    <div id="logoBox">
+      <div id="headerImgBox">
+        <a class="header-logo" href="#"><img src="images/site_logo.jpg" alt="A4Loop Logo"></a>
+      </div>
+      <div id="headerTagBox">
+        <div>
+          <h1>A4Loop</h1>
+          <p>Software Your Way</p>
+        </div>
+    </div>
+    </div>
     <!-- START NAV-->
-    <nav class="navbar navbar-expand-lg ">
-      <a class="navbar-brand header-logo" href="#"><img src="images/site_logo.jpg" class="logo responsive">Software Your Way</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-lg">
+<!--      <a class="navbar-brand" href="#"><img src="images/site_logo.jpg" alt="A4Loop Logo">A4 Loop</a> 
+-->
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
@@ -64,30 +77,6 @@
         </ul>
       </div>
     </nav>
-
-    <!--
-    <nav id="cssmenu">
-      <ul>
-        <li><a class="selected" href="index.php"></a></li>
-        <li><a href="services.php"><span>Services</span></a>
-          <ul>
-            <li><a href="software.php"><span>Software</span></a></li>
-            <li><a href="mobile.php"><span>Mobile Apps</span></a></li>
-            <li><a href="database.php"><span>Database </span></a></li>
-          </ul></li>
-          <li><a href="portfolio.php"><span>Portfolio</span></a></li>
-          <li><a href="about.php"><span>About</span></a>
-            <ul>
-              <li><a href="ourstory.php"><span>Our Story</span></a></li>
-              <li><a href="team.php"><span>The Team</span></a></li>
-              <li><a href="career.php"><span>Career Oppertunities</span></a></li>
-            </ul>
-          </li>
-          <li><a href="blog.php"><span>Blog</span></a></li>
-          <li><a href="contact.php"><span>Contact</span></a></li>
-        </ul>
-      </nav>
-    -->
     <!-- END NAV -->
   </header>
 
