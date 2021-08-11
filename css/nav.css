@@ -1,6 +1,5 @@
 header{
   background-color: rgba(51,51,51,1);
-  width: 100%;
   padding-top: 1rem;
   padding-bottom: .5rem;
   text-transform: uppercase;
@@ -10,31 +9,20 @@ header{
 }
 #logoBox {
   font-size: .75rem;
-  color: rgba(125,9,166,1);
+  color: #098614;
+  text-align: center;
 }
 
-/*.header-logo > img {
-  padding:.5rem 1rem;
-}*/
-/*.header-logo > p {
-  margin-bottom: 0;
-  font-size: .75rem;
-  text-align: center;
-  color: rgba(125,9,166,1);
-}*/
 #headerImgBox {
-  padding: .5rem 1rem;
+  /*padding: .5rem 3rem; */
   float: left;
 }
 #headerTagBox {
   float: left;
   padding-left: 1.5rem;
-  
 }
-
-#headerTagBox > p {
-  text-align: center;
-  font-size: .75rem;
+.header-logo {
+  max-height: .5rem;
 }
 
 
@@ -66,6 +54,13 @@ header{
   font-size: .8rem;
 }
 
+.nav-item a:hover {
+  color: rgb(177, 107, 202);
+}
+
+.dropdown a:hover{
+  color: rgb(177, 107, 202);
+}
 .dropdown-menu {
   background-color: transparent;
   color: rgb(126,176,15);
@@ -73,7 +68,7 @@ header{
 }
 .dropdown-menu a:hover {
   background-color: rgba(51,51,51,1);
-  color: red;
+  color: rgb(177, 107, 202);
 }
 .dropdown-item {
   background-color: rgba(51,51,51,1);
