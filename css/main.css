@@ -119,3 +119,10 @@ footer a:hover {
   text-align: center;
 
 }
+
+.section-1 {
+  background-color: rgb(125,9,166);
+}
+.section-2 {
+  background-color: orange;
+}
