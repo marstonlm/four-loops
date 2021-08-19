@@ -144,6 +144,7 @@ footer a:hover {
 }
 
 #section-id>h3 {
+  position: relative;
   z-index: 2;
   background-color: rgba(214,214,214,.75);
   max-width: 15%;
