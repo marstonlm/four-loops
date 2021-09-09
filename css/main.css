@@ -132,10 +132,24 @@ footer a:hover {
   font-weight: bold;
 }
 
+/*
+.section {
+  position: relative;
+  max-width: 80%;
+  background-color: rgba(214,214,214,.75);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+*/
+
+
 #section {
   position: relative;
   max-width: 80%;
   background-color: rgba(214,214,214,.75);
+  background-size: auto;
 }
 
 #section-id>h3 {
@@ -146,8 +160,10 @@ footer a:hover {
 
 #section-id>img {
   position: relative;
+  max-width: 100%;
+  height: auto;
 }
 
-.section-2 {
+.section-2>.row {
   background-color: orange;
 }
