@@ -2,7 +2,7 @@
   <!-- START Footer -->
   <footer>
     <div class="container">
-      <div class="footer-logo"><a href="index.php"><img src="images/site_logo.jpg" alt="A4 Loop logo" class="logo responsive"></a>
+      <div class="footer-logo"><a href="index.php"><img src="images/site_logo.jpg" alt="company logo" class="logo responsive"></a>
         </div>
       <!-- place social media icons here -->
       <div class="social row">
@@ -14,7 +14,7 @@
     </div>
     <div class="container footer-lower">
       <div class="site-map">
-        <table>
+        <table role="presentation">
           <tr> 
             <th><a href="services.php">Services</a></th>
             <th><a href="portfolio.php">Portfolio</a></th>

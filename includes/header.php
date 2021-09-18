@@ -23,7 +23,7 @@
   <header class="px-5 py-3">
     <div id="logoBox">
       <div id="headerImgBox">
-        <a class="header-logo" href="#"><img src="images/logo_header.png" alt="A4Loop Logo"></a>
+        <a class="header-logo" href="#"><img src="images/logo_header.png" alt="company logo"></a>
       </div>
     </div>
     <!-- START NAV-->
@@ -34,7 +34,7 @@
       </button>
     
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" role="presentation">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
           </li>
