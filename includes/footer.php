@@ -10,6 +10,7 @@
         <div class="column"><i class="fab fa-instagram"></i></div>
         <div class="column"><i class="fab fa-linkedin"></i></div>
         <div class="column"><i class="fab fa-twitter"></i></div>
+        <div class="column"><i class="#">Dribble</i></div>
       </div>
     </div>
     <div class="container footer-lower">

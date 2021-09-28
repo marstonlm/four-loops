@@ -45,6 +45,10 @@ footer {
     padding: 10px 25px;
     clear: both;
     color: #fff;
+    
+    /* STILL NEED TO TEST */
+    height: 25px;
+    line-height: 25px;
 }
 
 footer>.container {
