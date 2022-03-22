@@ -3,7 +3,7 @@
 <div class="row justify-content-center">
 
   <div class="col abkgd">
-    <h1>Let's get going</h1>
+    <h1>What else to put</h1>
 
   </div>
 </div>
