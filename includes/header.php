@@ -29,17 +29,15 @@
     </div>
     <!-- START NAV-->
 
-    
-
-
     <nav>
-        <ul>
+        <ul class="nav justify-content-end">
+
           <?php 
             foreach($nav as $key => $value) {
               if(THIS_PAGE == $key) {
-                echo '<li><a class="current" href="'.$key.'">'.$value.'</a></li>';
+                echo '<li class="nav-item"><a class="nav-link current" href="'.$key.'">'.$value.'</a></li>';
               } else {
-                echo '<li><a href="'.$key.'">'.$value.'</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="'.$key.'">'.$value.'</a></li>';
               }
             }
           ?>

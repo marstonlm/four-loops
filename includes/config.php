@@ -23,8 +23,9 @@ ob_start();
   $nav['index.php'] = 'Home';
   $nav['services.php'] = 'Services';
   $nav['portfolio.php'] = 'Portfolio';
-  $nav['contact.php'] = 'Contact';
   $nav['about.php'] = 'About';
+  $nav['contact.php'] = 'Contact';
+  
 
   
 switch(THIS_PAGE){
