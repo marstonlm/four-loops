@@ -1,3 +1,4 @@
+<?php include "config.php";?>
 <!doctype html>
 <html lang="en">
 
@@ -16,62 +17,45 @@
   <script src="https://kit.fontawesome.com/902b4b52d9.js" crossorigin="anonymous"></script>
 
 
-  <title>A4Loop</title>
+  <title><?php echo "$title"; ?></title>
 </head>
 
 <body>
   <header class="px-5 py-3">
     <div id="logoBox">
       <div id="headerImgBox">
-        <a class="header-logo" href="#"><img class="header-logo" src="images/logo.jpg" alt="A4Loop Logo"></a>
+        <a class="header-logo" href="index.php"><img class="header-logo" src="images/logo.jpg" alt="A4Loop Logo"></a>
       </div>
     </div>
     <!-- START NAV-->
 
-    <nav class="navbar navbar-expand-lg">
-      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Database</a>
-              <a class="dropdown-item" href="#">Web Applications</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              About Us
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
+    <nav>
+        <ul class="nav justify-content-end">
+
+          <?php 
+            foreach($nav as $key => $value) {
+              if(THIS_PAGE == $key) {
+                echo '<li class="nav-item"><a class="nav-link current" href="'.$key.'">'.$value.'</a></li>';
+              } else {
+                echo '<li class="nav-item"><a class="nav-link" href="'.$key.'">'.$value.'</a></li>';
+              }
+            }
+          ?>
         </ul>
-      </div>
-    </nav>
+      </nav> 
+
+
+
+
+
     <!-- END NAV -->
   </header>
 
   <!-- START MAIN and CONTAINER-->
   <main class="container">
+
+  <div class="row justify-content-center">
+      <div class="col pt-3 mt-3">
+        <h2 class=""><? echo "$pageID "; ?><h2>
+      </div>
+    </div>

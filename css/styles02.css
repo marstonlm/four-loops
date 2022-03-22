@@ -1,3 +1,5 @@
+/* FINAL PROJECT a4loop */
+
 /* ------ Global Styles ----- */
 * {
   margin:0;
@@ -6,30 +8,24 @@
 }
 
 html,body {
+  background-color: #eee;
   margin:0;
   padding:0;
-  background-color: #eee;
   font: 10px;
 }
 
+/* Nav 
+nav ul {
 
-main, footer, header {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
+*/
 
-.row > *{
-  max-width: 80%;
+/* Page Layout */
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
-
-footer>div, nav {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-
 /* Header */
 /* See nav.css */
 .logo {
@@ -45,6 +41,7 @@ text-align: center;
 /* Footer */
 footer {
   background-color: rgba(51,51,51,1);
+  margin: 0;
   padding: 10px 25px;
   clear: both;
   color: #fff;
@@ -53,7 +50,7 @@ footer {
 footer>.container {
   display: block;
   align-items: center;
-
+  max-width: 100%;
   margin: 0;
   overflow:auto;
 }
@@ -106,4 +103,31 @@ footer a:hover {
   width: 80%;
   float: right;
   text-align: right;
+}
+
+
+/* ----- ASIDE ----- */
+#aside {
+width: 10%;
+position: -webkit-sticky;
+position: sticky;
+height: 100%;
+top: 0;
+}
+
+
+/* ----- SECTIOM ----- */
+#section {
+max-width: 75%;
+}
+
+#section h3 {
+text-align: center;
+
+}
+
+.abkgd {
+background-image: url("../images/background_main.png");
+background-color: purple;
+
 }

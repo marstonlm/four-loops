@@ -15,16 +15,17 @@
       <div class="site-map">
         <table>
           <tr>
-            <th><a href=#>Services</a></th>
-            <th><a href=#">Portfolio</a></th>
-            <th><a href=#">About</a></th>
-            <th><a href=#>Blog</a></th>
-            <th><a href=# class="th-contact">Contact</a></th>
+            <th><a href="#">Services</a></th>
+            <th><a href="#">Portfolio</a></th>
+            <th><a href="#">About</a></th>
+            <th><a href="#" class="th-contact">Contact</a></th>
+            
+            
           </tr>
         </table>
       </div>
       <div class="copyright">
-        <p><small>&copy;
+        <p><small>&copy; 2019 -
             <script>document.write(new Date().getFullYear())</script> by <a href=# target="_blank">A4 Loop</a>, All
             Rights Reserved ~ <a href="disclaimer.php">Disclaimer</a> ~ <a href="http://validator.w3.org/check/referer"
               target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer"
