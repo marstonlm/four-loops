@@ -1,4 +1,4 @@
-<?php include "config.php";?>
+<?php include "config.php"; ?>
 <!doctype html>
 <html lang="en">
 
@@ -29,20 +29,26 @@
     </div>
     <!-- START NAV-->
 
-    <nav>
-        <ul class="nav justify-content-end">
-
-          <?php 
-            foreach($nav as $key => $value) {
-              if(THIS_PAGE == $key) {
-                echo '<li class="nav-item"><a class="nav-link current" href="'.$key.'">'.$value.'</a></li>';
+    <nav class="navbar navbar-expand-lg navbar-dark" >
+      <div class="container-fluid">        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <?php
+            foreach ($nav as $key => $value) {
+              if (THIS_PAGE == $key) {
+                echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="' . $key . '">' . $value . '</a></li>';
               } else {
-                echo '<li class="nav-item"><a class="nav-link" href="'.$key.'">'.$value.'</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="' . $key . '">' . $value . '</a></li>';
               }
             }
-          ?>
-        </ul>
-      </nav> 
+            ?>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 
 
@@ -54,7 +60,7 @@
   <!-- START MAIN and CONTAINER-->
   <main class="container">
 
-  <div class="row justify-content-center">
+    <div class="row justify-content-center">
       <div class="col pt-3 mt-3">
         <h2 class=""><? echo "$pageID "; ?><h2>
       </div>
